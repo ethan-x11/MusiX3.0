@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <div className='flex'>
       <Nav />
-      <div className='w-full'>{/* Start coding here */}</div>
+      <div className='w-full'>{/* Start point*/}</div>
       <Activity />
     </div>
   )
