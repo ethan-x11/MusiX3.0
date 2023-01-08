@@ -10,7 +10,7 @@ export const activities = [
     title: "Perfect",
     subTitle: 'Ed Sheeran',
     avatar:
-      'https://resources.tidal.com/images/3e29689c/351e/4832/9c33/45619c5e46dc/750x750.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Ed_Sheeran-6886_%28cropped%29.jpg/330px-Ed_Sheeran-6886_%28cropped%29.jpg',
   },
   {
     index: 3,

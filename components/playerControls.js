@@ -8,6 +8,7 @@ import repeat from "../assets/repeat.svg"
 import shuffle from "../assets/shuffle.svg"
 import playRounded from "../assets/playRounded.svg"
 import pauseIcon from "../assets/pause.svg"
+import musicicon from "../assets/music.jpg"
 
 const PlayerControls = ({songs}) => {
     const { currentSong, isPlaying, volume, onVolumeChange, timestamp, progress, playNext, playPrevious, isPaused, play, pause, onProgressChange } = useContext(SpotifyContext)
@@ -20,7 +21,7 @@ const PlayerControls = ({songs}) => {
         <div className={styles.flexCenter}>
             <div className={styles.albumCoverContainer}>
             <Image
-                src='https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/284832/settings_images/rLlCifhXRJiT0RoN2FjK_Logo_roundbackground_black.png'
+                src={ musicicon }
                 // src={currentSong.cover}
                 className={styles.coverPhoto}
                 height={200}
