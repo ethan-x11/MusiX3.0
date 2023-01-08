@@ -3,7 +3,7 @@
 
 **Live Demo**: <https://musix3.subhanjandutta.repl.co/>
 
-🎬**Demo Video**: <>
+🎬**Demo Video**: <https://youtu.be/2y3_fHeS1AE>
 
 | Description |
 -----------
