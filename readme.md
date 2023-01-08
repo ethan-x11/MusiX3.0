@@ -29,8 +29,8 @@ The Project is built using  Solana Smart Contracts and quicknode for the backend
 🙋**Contributors -**
 -----------------
 
-| Name                               | Linkedin                                                  |
+| Name                               | Social                                                 |
 | ---------------------------------- | ------------------------------------------------------------ |
 | **Subhanjan Dutta**         | <https://www.linkedin.com/in/subhanjan-dutta/> |
-| **Aishee Bhattacharya**         | <https://www.linkedin.com/in/> |
-| **Aayushi Mishra**         | <https://www.linkedin.com/in/> |
+| **Aishee Bhattacharya**         | <https://twitter.com/aisheeBh> |
+| **Aayushi Mishra**         | <https://twitter.com/mishraaayushi_?t=N6Tkgn3TKXCwbh9ZDHyXUQ&s=09> |
