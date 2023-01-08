@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   color: #fff;
   background: linear-gradient(to bottom, #BCA0A0, #242424b0, #242424);
-  overflow: hidden;
 }
 
 a {
