@@ -5,14 +5,14 @@ import PlayerControls from '../components/playerControls'
 import Activity from '../components/activity'
 import { useState, useEffect } from 'react'
 import UploadModal from '../components/UploadModal'
-import useSpotify from '../hooks/usemusix'
+import usemusix from '../hooks/usemusix'
 
 const HomePage = () => {
   const [showUploadMusic, setShowUploadMusic] = useState(false)
   const [title, setTitle] = useState('')
   const [musicUrl, setMusicUrl] = useState('')
 
-  const { newMusic, getSongs } = useSpotify(
+  const { newMusic, getSongs } = usemusix(
     musicUrl,
     title,
     setTitle,

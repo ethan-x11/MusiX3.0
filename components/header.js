@@ -22,65 +22,65 @@ const Header = ({ setShowUploadMusic }) => {
 
     return (
         <div className={style.header}>
-        <div className={style.headerWrapper}>
-            <div className='flex items-center'>
-            <div className={style.arrowButton}>
-                <img alt='' src='assets/chevronLeft.svg' width={20} height={20} />
-            </div>
-            <div className={style.arrowButton}>
-                <img alt='' src='assets/chevronRight.svg' width={20} height={20} />
-            </div>
-            </div>
-
-            <div className={style.headerRight}>
-            <UploadButton setShowUploadMusic={setShowUploadMusic} />
-
-            <div className={style.profile}>
-                <div className={style.profileAvatarContainer}>
-                <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+            <div className={style.headerWrapper}>
+                <div className='flex items-center'>
+                    <div className={style.arrowButton}>
+                        <img alt='' src='assets/chevronLeft.svg' width={20} height={20} />
+                    </div>
+                    <div className={style.arrowButton}>
+                        <img alt='' src='assets/chevronRight.svg' width={20} height={20} />
+                    </div>
                 </div>
-                <p>Your Name</p>
-            </div>
-            </div>
-        </div>
 
-        <div className={style.playlistTextContent}>
-            <Image
-            alt=''
-            src='https://angartwork.akamaized.net/webp/?id=150949021&size=296'
-            width={220}
-            height={220}
-            />
+                <div className={style.headerRight}>
+                <UploadButton setShowUploadMusic={setShowUploadMusic} />
 
-            <div className='ml-5'>
-            <div>ALBUM</div>
-            <div className={style.title}>Your Album</div>
-            <div className='flex items-center mt-5'>
-                <div className={style.profileAvatarContainer}>
-                <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+                <div className={style.profile}>
+                    <div className={style.profileAvatarContainer}>
+                        <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+                    </div>
+                    <p>Your Name</p>
                 </div>
-                <p>
-                <span className='text-bold'>SteamBeats</span> • 2020 • 46 songs, 3
-                hr 20 min
-                </p>
+                </div>
             </div>
-            </div>
-        </div>
 
-        <div className={style.controlsContainer}>
-            <div className={style.playButton}>
-            <img alt='' src='assets/play.svg' width={30} height={30} />
+            <div className={style.playlistTextContent}>
+                <Image
+                alt=''
+                src='https://angartwork.akamaized.net/webp/?id=150949021&size=296'
+                width={220}
+                height={220}
+                />
+
+                <div className='ml-5'>
+                    <div>ALBUM</div>
+                    <div className={style.title}>Your Album</div>
+                    <div className='flex items-center mt-5'>
+                        <div className={style.profileAvatarContainer}>
+                        <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+                        </div>
+                        <p>
+                        <span className='text-bold'>SteamBeats</span> • 2020 • 46 songs, 3
+                        hr 20 min
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div className={style.iconContainer}>
-            <img alt='' src='assets/heart.svg' width={30} height={30} />
+
+            <div className={style.controlsContainer}>
+                <div className={style.playButton}>
+                    <img alt='' src='assets/play.svg' width={30} height={30} />
+                </div>
+                <div className={style.iconContainer}>
+                    <img alt='' src='assets/heart.svg' width={30} height={30} />
+                </div>
+                <div className={style.iconContainer}>
+                    <img alt='' src='assets/download.svg' width={30} height={30} />
+                </div>
+                <div className={style.iconContainer}>
+                    <img alt='' src='assets/more.svg' width={30} height={30} />
+                </div>
             </div>
-            <div className={style.iconContainer}>
-            <img alt='' src='assets/download.svg' width={30} height={30} />
-            </div>
-            <div className={style.iconContainer}>
-            <img alt='' src='assets/more.svg' width={30} height={30} />
-            </div>
-        </div>
         </div>
     )
 }

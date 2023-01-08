@@ -37,27 +37,27 @@ const Nav = () => {
       </div>
 
       <div className='mt-5 leading-8 flex flex-col gap-[10px]'>
-        <p className='text-sm'>GHOST SONGS</p>
+        <p className='text-sm'>FAVOURITE SONGS</p>
         <p className={styles.playlistName}>
-          CarPlay Vol.2
+          Choo Lo
         </p>
         <p className={styles.playlistName}>
-          Country Dump
+          Perfect
         </p>
         <p className={styles.playlistName}>
-          Energy Booster: Country
+          Love Me Like You Do
         </p>
         <p className={styles.playlistName}>
-          Funky
+          Shape of You
         </p>
         <p className={styles.playlistName}>
-          Coaching 🔥
+          Despacito
         </p>
         <p className={styles.playlistName}>
-          Country
+          See You Again
         </p>
         <p className={styles.playlistName}>
-          Your Top Songs 2019
+          Your Top Songs 2022
         </p>
       </div>
     </div>
