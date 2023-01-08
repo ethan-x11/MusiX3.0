@@ -6,7 +6,8 @@ import Payments from './payments'
 
 const styles = {
     loginPage: `w-screen h-screen flex justify-center flex-col items-center bg-gray-200`,
-    text: `text-4xl font-bold text-gray-700 mb-10`
+    text: `text-4xl font-bold text-gray-700 mb-10`,
+    textr: `text-6xl font-bold text-red-700 mb-10`
 }
 
 const Login = () => {
@@ -17,6 +18,7 @@ const Login = () => {
 
     return (
     <div className={styles.loginPage}>
+        <p className={styles.textr} > MusiX3.0 </p>
         <p className={styles.text}> Login using Phantom Wallet to Access </p>
         <WalletMultiButton />
     </div>
