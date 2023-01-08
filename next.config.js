@@ -14,6 +14,8 @@ const nextConfig = {
       'i.scdn.co' ,
       'encrypted-tbn1.gstatic.com'
     ],
+    Loader: 'akamai',
+    path: '/',
   },
 }
 
