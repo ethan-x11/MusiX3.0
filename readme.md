@@ -1,5 +1,7 @@
 # MusiX3.0
 
+![1](https://user-images.githubusercontent.com/62725955/211182100-1f045d81-fa09-4226-8728-22df58351d7b.png)
+
 
 **Live Demo**: <https://musix3.subhanjandutta.repl.co/>
 
