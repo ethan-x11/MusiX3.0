@@ -5,7 +5,7 @@ use std::mem::size_of;
 
 // This is your program's public key and it will update
 // automatically when you build the project.
-declare_id!("AKXGSzURaj4NHr34kfYBYxdf7suCfLYrG6iquS7MBNo3");
+declare_id!("1111111111111111111111111111111111111111");
 
 const TEXT_LENGTH: usize = 255;
 const MUSIC_URL_LENGTH: usize = 255;
