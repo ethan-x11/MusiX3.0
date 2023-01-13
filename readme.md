@@ -1,38 +1,34 @@
-# MusiX3.0
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![3](https://user-images.githubusercontent.com/62725955/211182123-a4e2efb5-8666-41ae-b956-ce3ea34072cb.png)
+## Getting Started
 
+First, run the development server:
 
-**Live Demo**: <https://musix3.subhanjandutta.repl.co/>
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-🎬**Demo Video**: <https://youtu.be/2y3_fHeS1AE>
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-| Description |
------------
-With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favourite music and participate as a creator. 
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; React.js and Tailwind CSS for Frontend; and for deployment we have used Replit.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-🌟 Features -
------------
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-- **Decentralized Music Streaming Platform** built as Blockchain Web3 dApp using Next.js, Solana, Phantom, QuickNode.
+## Learn More
 
-💻  Tech-Stacks Used -
----------------------
+To learn more about Next.js, take a look at the following resources:
 
-- [React.js](http://reactjs.org)
-- [TailWind CSS](https://tailwindcss.com/)
-- [Solana](https://solana.com/)
-- [Solana PlayGround](https://beta.solpg.io/)
-- [Phantom Wallet](https://phantom.app/)
-- [Replit](https://replit.com/)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-🙋**Contributors -**
------------------
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-| Name                               | Social                                                 |
-| ---------------------------------- | ------------------------------------------------------------ |
-| **Subhanjan Dutta**         | <https://www.linkedin.com/in/subhanjan-dutta/> |
-| **Aishee Bhattacharya**         | <https://twitter.com/aisheeBh> |
-| **Aayushi Mishra**         | <https://twitter.com/mishraaayushi_?t=N6Tkgn3TKXCwbh9ZDHyXUQ&s=09> |
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

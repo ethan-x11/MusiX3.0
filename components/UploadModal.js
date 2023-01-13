@@ -53,7 +53,6 @@ const UploadModal = ({
     return (
         <div className={style.wrapper}>
         <div className={style.title}>Upload New Music</div>
-        <div className={style.cover} align='left' >Cover Image</div>
         <input type='file' id='music-file' name='file' />
         <div className={style.modalButtons}>
             <button

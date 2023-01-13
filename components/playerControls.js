@@ -62,7 +62,7 @@ const PlayerControls = ({songs}) => {
                 type='range'
                 className={styles.range}
             />
-            <small>{'--:--'}</small>
+            <small>{'2:43'}</small>
             {/* <small>{currentSong.songLength}</small> */}
             </div>
         </div>

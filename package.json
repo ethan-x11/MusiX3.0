@@ -10,7 +10,7 @@
     "export": "yarn build && next export && mv out_static"
   },
   "engines": {
-    "node": "16.x"
+    "node": "14.x"
   },
   "dependencies": {
     "@project-serum/anchor": "^0.22.1",
