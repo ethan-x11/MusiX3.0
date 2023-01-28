@@ -46,7 +46,7 @@ const Payments = () => {
                 setPaid(true)
         })
     }
-
+    
     const payClicked = async () => {
         let [payerSigner] = await anchor.web3.PublicKey.findProgramAddress(
             [utf8.encode('payer'), wallet.publicKey.toBuffer()],
@@ -77,6 +77,7 @@ const Payments = () => {
     }
 
     if (isPaid) return <HomePage />
+    console.log(wallet.publicKey)
 
     return (
         <div className={styles.main} style={{backgroundImage: "url('https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
@@ -90,6 +91,7 @@ const Payments = () => {
                 >
                     Pay 0.1 Sol
                 </button>
+                <button className={styles.demo}>View Demo</button>
                 <button className={styles.button} onClick={getAllWallets}>
                     Verify Payment
                 </button>
