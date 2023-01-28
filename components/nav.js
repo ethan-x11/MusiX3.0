@@ -2,10 +2,10 @@ import NavLink from './navLink'
 import Recents from './recents'
 
 const styles = {
-  nav: `bg-black h-screen w-96 p-5 py-10 `,
+  nav: `bg-black h-screen w-52 p-5 py-10 flex-[0.7] flex-col overflow-hidden`,
   link: `hover:text-[#fff]`,
-  playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`
-}
+  playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`,
+};
 
 const Nav = () => {
   const options = "home;"

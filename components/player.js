@@ -9,7 +9,7 @@ import usemusix from '../hooks/usemusix'
 import Head from 'next/head'
 
 const style = {
-    wrapper: `flex-[2] m-10 h-screen h-screen min-h-screen no-scrollbar overflow-y-scroll`,
+    wrapper: `flex-[2] m-10 h-screen h-screen min-h-screen no-scrollbar overflow-y-scroll select-none`,
     search: `sticky flex`,
     searchbox: `sticky bg-gray-200 rounded-lg p-2 text-black`,
     searchbutton: `bg-blue-500 text-white rounded-lg p-2`,
