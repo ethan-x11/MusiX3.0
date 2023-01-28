@@ -1,6 +1,6 @@
 import Header from './header'
 import Nav from './nav'
-import Playlist from './playlist'
+import Playlist from './table/recentList'
 import PlayerControls from './playerControls'
 import Activity from './activity'
 import { useState, useEffect } from 'react'
