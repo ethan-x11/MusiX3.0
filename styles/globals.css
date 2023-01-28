@@ -30,11 +30,11 @@ a {
   text-decoration: none;
 }
 
-.wallet-adapter-button {
-  background: #5B21B6 !important;
+ button.wallet-adapter-button {
+  background: #5B21B6 !important ;
   width: 14rem;
-  height: 4rem;
-  border-radius: 5px;
+  height:5rem;
+ border-radius: 17px;
   display: flex;
   justify-content: center;
 }
