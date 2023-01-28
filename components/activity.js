@@ -12,8 +12,8 @@ const Activity = () => {
   return (
     <div className={styles.activity}>
       <div className={styles.title}>
-        Friend Activity
-        <img src='assets/friend.svg' alt='' />
+        Current Hits
+        {/* <img src='assets/friend.svg' alt='' /> */}
       </div>
 
       <div className='mb-10'>

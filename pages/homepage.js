@@ -15,7 +15,7 @@ const HomePage = () => {
 
         <Nav />
         <Mainscreen initialSelectedIcon={'Home'}/>
-        {/* <Activity /> */}
+        <Activity />
         
       </div>
     </div>

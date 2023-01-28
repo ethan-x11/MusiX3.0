@@ -71,9 +71,9 @@ const Header = ({ setShowUploadMusic }) => {
                 <div className={style.playButton}>
                     <img alt='' src='assets/play.svg' width={30} height={30} />
                 </div>
-                <div className={style.iconContainer}>
+                {/* <div className={style.iconContainer}>
                     <img alt='' src='assets/heart.svg' width={30} height={30} />
-                </div>
+                </div> */}
                 {/* <div className={style.iconContainer}>
                     <img alt='' src='assets/download.svg' width={30} height={30} />
                 </div>
