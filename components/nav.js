@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { Context } from "../context/context";
 
 const styles = {
-  nav: `bg-black h-screen w-52 p-5 py-10 flex-[0.7] flex-col overflow-hidden`,
+  nav: `bg-black h-screen w-52 p-5 py-10 flex-[0.5] flex-col overflow-hidden`,
   link: `hover:text-[#fff]`,
   playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`,
 };
@@ -14,7 +14,7 @@ const Nav = () => {
   const options = "home;";
   return (
     <div className={styles.nav}>
-      <div className="mb-10">
+      <div className="mb-10 flex flex-col">
         <button onClick={() => changeDisp("home")}>
           <NavLink
             type="button"
