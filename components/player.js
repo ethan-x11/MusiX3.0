@@ -9,11 +9,11 @@ import usemusix from '../hooks/usemusix'
 import Head from 'next/head'
 
 const style = {
-    wrapper: `flex-[2] border-r border-l border-[#38444d] no-scrollbar overflow-y-scroll`,
-    search: `flex`,
-    searchbox: `bg-gray-200 rounded-lg p-2 text-black`,
-    searchbutton: `bg-blue-500 text-white rounded-lg p-2`,
-}
+  wrapper: `flex-[2] m-10 h-screen h-screen min-h-screen no-scrollbar overflow-y-scroll`,
+  search: `sticky flex`,
+  searchbox: `sticky bg-gray-200 rounded-lg p-2 text-black`,
+  searchbutton: `bg-blue-500 text-white rounded-lg p-2`,
+};
 
 const Player = () => {
     const [showUploadMusic, setShowUploadMusic] = useState(false)
