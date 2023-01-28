@@ -2,7 +2,7 @@ import { useContext } from 'react'
 import { SpotifyContext } from '../context/context'
 
 const styles = {
-    uploadButton: `bg-green-500 mr-10 px-3 py-1.5 cursor-pointer hover:scale-95 transition rounded-full`,
+    uploadButton: `bg-green-500 px-3 py-1.5 cursor-pointer hover:scale-95 transition rounded-full`,
     }
 
     const UploadButton = ({ setShowUploadMusic }) => {

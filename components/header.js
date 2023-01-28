@@ -9,7 +9,7 @@ const style = {
     profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75`,
     iconContainer: `ml-10`,
     title: `text-6xl font-extrabold`,
-    header: `max-w-7xl m-auto p-3`,
+    header: `sticky max-w-7xl m-auto p-3`,
     headerWrapper: `flex items-center justify-between`,
     playlistTextContent: `flex items-end mt-10`,
     profileAvatarContainer: `w-7 h-7 rounded-full -ml-2 mr-3`,
