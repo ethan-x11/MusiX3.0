@@ -7,15 +7,16 @@ const nextConfig = {
   images: {
     domains: [
       'kajabi-storefronts-production.kajabi-cdn.com',
+      'i.scdn.co/image/',
       'upload.wikimedia.org',
       'i.ytimg.com',
       'angartwork.akamaized.net' ,
-      'resources.tidal.com' ,
+      'resources.tidal.com' , 
       'i.scdn.co' ,
-      'encrypted-tbn1.gstatic.com'
+      'encrypted-tbn1.gstatic.com',
+      'img.freepik.com',
+      '*.*.com'
     ],
-    Loader: 'akamai',
-    path: '/',
   },
 }
 

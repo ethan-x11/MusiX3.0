@@ -1,38 +1,27 @@
-# MusiX3.0
+# Next.js + Tailwind CSS Example
 
-![3](https://user-images.githubusercontent.com/62725955/211182123-a4e2efb5-8666-41ae-b956-ce3ea34072cb.png)
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
+## Deploy your own
 
-**Live Demo**: <https://musix3.subhanjandutta.repl.co/>
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-🎬**Demo Video**: <https://youtu.be/2y3_fHeS1AE>
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-| Description |
------------
-With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favourite music and participate as a creator. 
+## How to use
 
-The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; React.js and Tailwind CSS for Frontend; and for deployment we have used Replit.
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-🌟 Features -
------------
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```
 
-- **Decentralized Music Streaming Platform** built as Blockchain Web3 dApp using Next.js, Solana, Phantom, QuickNode.
+```bash
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```
 
-💻  Tech-Stacks Used -
----------------------
+```bash
+pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+```
 
-- [React.js](http://reactjs.org)
-- [TailWind CSS](https://tailwindcss.com/)
-- [Solana](https://solana.com/)
-- [Solana PlayGround](https://beta.solpg.io/)
-- [Phantom Wallet](https://phantom.app/)
-- [Replit](https://replit.com/)
-
-🙋**Contributors -**
------------------
-
-| Name                               | Social                                                 |
-| ---------------------------------- | ------------------------------------------------------------ |
-| **Subhanjan Dutta**         | <https://www.linkedin.com/in/subhanjan-dutta/> |
-| **Aishee Bhattacharya**         | <https://twitter.com/aisheeBh> |
-| **Aayushi Mishra**         | <https://twitter.com/mishraaayushi_?t=N6Tkgn3TKXCwbh9ZDHyXUQ&s=09> |
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

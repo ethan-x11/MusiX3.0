@@ -5,7 +5,7 @@ const ActivityCard = ({ title, subTitle, avatar }) => {
     <div className={styles.activityCard}>
       <div className={styles.profileAvatarContainer}>
         <Image
-          alt=''
+          alt={title}
           src={avatar}
           className={styles.avatar}
           width={50}

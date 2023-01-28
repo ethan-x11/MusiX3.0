@@ -1,5 +1,5 @@
 import { useContext } from 'react'
-import { SpotifyContext } from '../context/context'
+import { Context } from '../context/context'
 import Image from 'next/image'
 import UploadButton from './uploadButton'
 
@@ -18,7 +18,7 @@ const style = {
 }
 
 const Header = ({ setShowUploadMusic }) => {
-    const { currentSong } = useContext(SpotifyContext)
+    const { currentSong } = useContext(Context)
 
     return (
         <div className={style.header}>
@@ -33,28 +33,28 @@ const Header = ({ setShowUploadMusic }) => {
                 </div>
 
                 <div className={style.headerRight}>
-                <UploadButton setShowUploadMusic={setShowUploadMusic} />
+                    <UploadButton setShowUploadMusic={setShowUploadMusic} />
 
-                <div className={style.profile}>
-                    <div className={style.profileAvatarContainer}>
-                        <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+                    <div className={style.profile}>
+                        <div className={style.profileAvatarContainer}>
+                            <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+                        </div>
+                        <p>MusiX ID</p>
                     </div>
-                    <p>Your Name</p>
-                </div>
                 </div>
             </div>
 
-            <div className={style.playlistTextContent}>
+            {/* <div className={style.playlistTextContent}>
                 <Image
                 alt=''
-                src='https://angartwork.akamaized.net/webp/?id=150949021&size=296'
+                src='https://img.freepik.com/free-vector/elegant-musical-notes-music-chord-background_1017-20759.jpg?w=360'
                 width={220}
                 height={220}
                 />
 
                 <div className='ml-5'>
                     <div>ALBUM</div>
-                    <div className={style.title}>Your Album</div>
+                    <div className={style.title}>Best Choice</div>
                     <div className='flex items-center mt-5'>
                         <div className={style.profileAvatarContainer}>
                         <img alt='' src='assets/avatar.jpg' className='rounded-full' />
@@ -65,7 +65,7 @@ const Header = ({ setShowUploadMusic }) => {
                         </p>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div className={style.controlsContainer}>
                 <div className={style.playButton}>
@@ -74,12 +74,12 @@ const Header = ({ setShowUploadMusic }) => {
                 <div className={style.iconContainer}>
                     <img alt='' src='assets/heart.svg' width={30} height={30} />
                 </div>
-                <div className={style.iconContainer}>
+                {/* <div className={style.iconContainer}>
                     <img alt='' src='assets/download.svg' width={30} height={30} />
                 </div>
                 <div className={style.iconContainer}>
                     <img alt='' src='assets/more.svg' width={30} height={30} />
-                </div>
+                </div> */}
             </div>
         </div>
     )

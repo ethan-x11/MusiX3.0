@@ -20,8 +20,9 @@ const defaultAccounts = {
 
 const styles = {
     main: `w-screen h-screen bg-white text-black flex flex-col justify-center items-center`,
-    button: `bg-[#22C55E] m-3 text-white font-bold py-4 px-7 rounded-full hover:opacity-70 transition`,
-    text: `text-4xl text-black mb-10`,
+    button: `bg-[#22C55E] m-3 text-white font-bold py-4 px-7 rounded-full hover:bg-blue-600 transition`,
+    text: `text-4xl font-bold text-gray-700 mb-10 drop-shadow-2xl`,
+    textr: `text-9xl font-brush text-red-600 mb-10 drop-shadow-2xl pb-60`,
     buttons: `flex items-center`,
 }
 
@@ -78,21 +79,22 @@ const Payments = () => {
     if (isPaid) return <HomePage />
 
     return (
-        <div className={styles.main}>
-        <p className={styles.text}>Make payment</p>
-        <div className={styles.buttons}>
-            <button
-            className={styles.button}
-            onClick={payClicked}
-            disabled={isPaid}
-            >
-            Pay 0.1 Sol
-            </button>
-            <button className={styles.button} onClick={getAllWallets}>
-            Verify Payment
-            </button>
+        <div className={styles.main} style={{backgroundImage: "url('https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
+            <p className={styles.textr} > MusiX 3.0 </p>
+            <p className={styles.text}>Make payment</p>
+            <div className={styles.buttons}>
+                <button
+                className={styles.button}
+                onClick={payClicked}
+                disabled={isPaid}
+                >
+                    Pay 0.1 Sol
+                </button>
+                <button className={styles.button} onClick={getAllWallets}>
+                    Verify Payment
+                </button>
+            </div>
         </div>
-    </div>
     )
 }
 

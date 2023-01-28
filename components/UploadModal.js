@@ -68,6 +68,8 @@ const UploadModal = ({
             <div className={style.inputTitle}>Title</div>
             <div className={style.inputContainer}>
             <input
+                required
+                name='title'
                 className={style.input}
                 type='text'
                 value={title}
@@ -79,6 +81,8 @@ const UploadModal = ({
             <div className={style.inputTitle}>Music Url</div>
             <div className={style.inputContainer}>
             <input
+                required
+                name='musicUrl'
                 className={style.input}
                 type='text'
                 value={musicUrl}
@@ -94,8 +98,10 @@ const UploadModal = ({
             Cancel
             </button>
             <button
-            onClick={createNewClicked}
-            className={`${style.button} ${style.createButton}`}
+                type='create'
+                disabled={ musicUrl.length == 0 }
+                onClick={createNewClicked}
+                className={`${style.button} ${style.createButton}`}
             >
             Create New
             </button>

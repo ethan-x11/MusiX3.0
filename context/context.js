@@ -1,8 +1,8 @@
 import { createContext, useState, useEffect } from "react"
 
-export const SpotifyContext = createContext()
+export const Context = createContext()
 
-export const SpotifyProvider = ({ children }) => {
+export const Provider = ({ children }) => {
     const [currentSong, setCurrentSong] = useState({})
     const [isPlaying, setIsPlaying] = useState(false)
     const [isPaused, setIsPaused] = useState(false)
@@ -91,7 +91,7 @@ export const SpotifyProvider = ({ children }) => {
         const previousSong = songs[id - 1];
         playOnSelect(previousSong.account);
     }
-    return <SpotifyContext.Provider value={{
+    return <Context.Provider value={{
         isPlaying, setIsPlaying,
         currentSong, setCurrentSong,
         isPaused, setIsPaused,
@@ -107,5 +107,5 @@ export const SpotifyProvider = ({ children }) => {
         onVolumeChange,
     }}>
         {children}
-    </SpotifyContext.Provider>
+    </Context.Provider>
 }

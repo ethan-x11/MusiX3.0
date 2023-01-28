@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { SpotifyContext } from "../context/context"
+import { Context } from "../context/context"
 import Image from "next/image"
 import next from "../assets/next.svg"
 import previous from "../assets/previous.svg"
@@ -11,7 +11,7 @@ import pauseIcon from "../assets/pause.svg"
 import musicicon from "../assets/music.jpg"
 
 const PlayerControls = ({songs}) => {
-    const { currentSong, isPlaying, volume, onVolumeChange, timestamp, progress, playNext, playPrevious, isPaused, play, pause, onProgressChange } = useContext(SpotifyContext)
+    const { currentSong, isPlaying, volume, onVolumeChange, timestamp, progress, playNext, playPrevious, isPaused, play, pause, onProgressChange } = useContext(Context)
 
     if (!isPlaying) return null
 
