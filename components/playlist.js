@@ -6,6 +6,7 @@ const styles = {
     // tableWrapper: `max-w-7xl m-auto p-3 mt-5 mb-40`,
     tableWrapper: `max-w-7xl m-auto p-3 pb-0 flex-[2] border-r border-l border-[#38444d]`,
     tableHeader: `border-b border-gray-100/20 pb-5 opacity-50`,
+    end: `text-center text-gray-100/50 text-sm mt-5 flex justify-center`,
 }
 
 
@@ -25,16 +26,25 @@ const Playlist = ({songs,searchId}) => {
                 
                 <tbody className='mb-6 block'></tbody>
                 
-                {songs.map((song, searchTerm) => {
-                    
-                    console.log(song.id, song.account);
-                            if(searchId.length == 0){
-                                return <TableRow key={song.id} props={song.account} />
-                            }
-                            else if(searchId.length > 0 && song.account.name.includes(searchId)){
-                                return <TableRow key={song.id} props={song.account} />
-                            }
+                {songs.sort((a, b) => a.account.title.localeCompare(b.account.title))
+                .map((song) => {
+                    const title = song.account.title.toLowerCase();
+                    const sId = searchId.toLowerCase();
+
+                    console.log(title, sId);
+                    console.log(typeof title, typeof sId);
+                    if(searchId.length == 0){
+                        return <TableRow key={song.id} props={song.account} />
+                    }
+                    else if(sId.length > 0 && !title.includes(sId)){
+                        return
+                    }
+                    else if(sId.length > 0 && title.includes(sId)){
+                        return <TableRow key={song.id} props={song.account} />
+                    }
                 })}
+                
+                <div className={styles.end}>End-of-Results</div>
 
             </table>
         </div>
