@@ -13,7 +13,6 @@ const Activity = () => {
     <div className={styles.activity}>
       <div className={styles.title}>
         Current Hits
-        {/* <img src='assets/friend.svg' alt='' /> */}
       </div>
 
       <div className='mb-10'>

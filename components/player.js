@@ -53,7 +53,6 @@ const Player = () => {
         event.preventDefault();
         console.log(searchTerm);
     }
-    
 
     return (
         <div className={style.wrapper}>
