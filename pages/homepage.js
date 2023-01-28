@@ -1,8 +1,11 @@
-import Nav from '../components/nav'
-import Player from '../components/player'
-import Activity from '../components/activity'
-import Head from 'next/head'  
-import Mainscreen from '../components/mainscreen'
+import { useContext } from "react";
+import Nav from "../components/nav";
+import Player from "../components/player";
+import Activity from "../components/activity";
+import Head from "next/head";
+import Mainscreen from "../components/mainscreen";
+import CreatePlaylist from "../components/createPlaylist";
+import { Context } from "../context/context";
 
 const style = {
   wrapper: `flex justify-center max-h-screen select-none bg-[#15202b] text-white`,
@@ -10,7 +13,7 @@ const style = {
   nav: `overflow-hidden`,
   main: `no-scrollbar overflow-y-scroll`,
   act: `overflow-hidden`,
-}
+};
 
 const HomePage = () => {
   return (
@@ -20,12 +23,12 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.wrapper}>
-          <Nav className={style.nav}/>
-          <Mainscreen className={style.main} initialSelectedIcon={'Home'}/>
-          <Activity className={style.act}/>
-        </div>
+        <Nav className={style.nav} />
+        <Mainscreen className={style.main} initialSelectedIcon={"Home"} />
+        <Activity className={style.act} />
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;

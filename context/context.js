@@ -9,6 +9,7 @@ export const Provider = ({ children }) => {
     const [progress, setProgress] = useState(false)
     const [volume, setVolume] = useState(false)
     const [timestamp, setTimestamp] = useState()
+    const [disp, setDisp] = useState('home')
 
     useEffect(() => {
         if (isPlaying) {
@@ -91,21 +92,37 @@ export const Provider = ({ children }) => {
         const previousSong = songs[id - 1];
         playOnSelect(previousSong.account);
     }
-    return <Context.Provider value={{
-        isPlaying, setIsPlaying,
-        currentSong, setCurrentSong,
-        isPaused, setIsPaused,
-        play, pause,
-        updateProgress, progress,
-        playOnSelect,
-        onProgressChange,
-        playNext,
-        playPrevious,
-        timestamp,
-        updateVolume,
-        volume,
-        onVolumeChange,
-    }}>
+    
+    const changeDisp = (data) => {
+        setDisp(data);
+    }
+
+    return (
+      <Context.Provider
+        value={{
+          isPlaying,
+          setIsPlaying,
+          currentSong,
+          setCurrentSong,
+          isPaused,
+          setIsPaused,
+          play,
+          pause,
+          updateProgress,
+          progress,
+          playOnSelect,
+          onProgressChange,
+          playNext,
+          playPrevious,
+          timestamp,
+          updateVolume,
+          volume,
+          onVolumeChange,
+          disp,
+          changeDisp,
+        }}
+      >
         {children}
-    </Context.Provider>
+      </Context.Provider>
+    );
 }
