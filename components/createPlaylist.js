@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function CreatePlaylist() {
+export default function createPlaylist() {
   const [playlistName, setPlaylistName] = useState("");
   const [songList, setSongList] = useState([]);
 
