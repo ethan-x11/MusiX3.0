@@ -17,14 +17,12 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={style.wrapper}>
-        <div className={style.wrapper}>
           <Nav />
           <Mainscreen initialSelectedIcon={'Home'}/>
           <Activity />
         </div>
         
       </div>
-    </div>
   )
 }
 
