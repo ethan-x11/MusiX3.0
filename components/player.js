@@ -73,10 +73,8 @@ const Player = () => {
                     >Search</button>
                 </form>
             </div>
-
-            if(searchTerm == ''){
-                <Playlist songs={songs} />
-            } 
+            
+            <Playlist songs={songs} searchId={searchTerm} />
 
             <PlayerControls songs={songs} />
             {showUploadMusic && (

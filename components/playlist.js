@@ -9,7 +9,7 @@ const styles = {
 }
 
 
-const Playlist = ({songs,searchTerm}) => {
+const Playlist = ({songs,searchId}) => {
     return (
         <div className={styles.tableWrapper}>
             <table className={styles.table}>
@@ -28,7 +28,10 @@ const Playlist = ({songs,searchTerm}) => {
                 {songs.map((song, searchTerm) => {
                     
                     console.log(song.id, song.account);
-                            if(searchTerm.length == 0){
+                            if(searchId.length == 0){
+                                return <TableRow key={song.id} props={song.account} />
+                            }
+                            else if(searchId.length > 0 && song.account.name.includes(searchId)){
                                 return <TableRow key={song.id} props={song.account} />
                             }
                 })}
