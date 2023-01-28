@@ -9,9 +9,9 @@ import usemusix from '../hooks/usemusix'
 import Head from 'next/head'
 
 const style = {
-    wrapper: `flex-[2] m-10 h-screen h-screen min-h-screen no-scrollbar overflow-y-scroll select-none`,
-    search: `sticky flex`,
-    searchbox: `sticky bg-gray-200 rounded-lg p-2 text-black`,
+    wrapper: `flex-[2] h-screen min-h-screen no-scrollbar overflow-y-scroll select-none`,
+    searchbox: `flex`,
+    searchentry: `bg-gray-200 rounded-lg p-2 text-black`,
     searchbutton: `bg-blue-500 text-white rounded-lg p-2`,
 };
 
@@ -58,21 +58,20 @@ const Player = () => {
         <div className={style.wrapper}>
             <Header setShowUploadMusic={setShowUploadMusic} />
 
-            <div className={style.search}>
-                <form onSubmit={handleSubmit}>
-                    <input
-                        className={style.searchbox}
-                        type="text"
-                        placeholder="Search"
-                        value={searchTerm}
-                        onChange={(e) => setSearchTerm(e.target.value)}
-                    />
-                    <button className={style.searchbutton}
-                        onClick={handleSubmit}
-                    >Search</button>
-                </form>
-            </div>
-            
+            <form className={style.searchbox} onSubmit={handleSubmit}>
+                <input
+                    className={style.searchentry}
+                    type="text"
+                    placeholder="Search"
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                
+                {/* <button className={style.searchbutton} onClick={handleSubmit}>
+                    Search
+                </button> */}
+            </form>
+        
             <Playlist songs={songs} searchId={searchTerm} />
 
             <PlayerControls songs={songs} />

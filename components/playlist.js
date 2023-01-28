@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import TableRow from './table/tableRow'
 
 const styles = {
-    table: `w-full text-left `,
+    table: `w-screen text-left `,
     // tableWrapper: `max-w-7xl m-auto p-3 mt-5 mb-40`,
     tableWrapper: `max-w-7xl m-auto p-3 pb-0 flex-[2] border-r border-l border-[#38444d]`,
     tableHeader: `border-b border-gray-100/20 pb-5 opacity-50`,

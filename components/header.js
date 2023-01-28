@@ -5,8 +5,8 @@ import UploadButton from './uploadButton'
 
 const style = {
     arrowButton: `bg-black mr-2 w-10 h-10 flex items-center justify-center rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-75`,
-    headerRight: `flex`,
-    profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75`,
+    headerRight: `flex flex-1 justify-end items-center`,
+    profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75 mb-2`,
     iconContainer: `ml-10`,
     title: `text-6xl font-extrabold`,
     header: `sticky max-w-7xl m-auto p-3`,
@@ -23,23 +23,23 @@ const Header = ({ setShowUploadMusic }) => {
     return (
         <div className={style.header}>
             <div className={style.headerWrapper}>
-                <div className='flex items-center'>
+                {/* <div className='flex items-center'>
                     <div className={style.arrowButton}>
                         <img alt='' src='assets/chevronLeft.svg' width={20} height={20} />
                     </div>
                     <div className={style.arrowButton}>
                         <img alt='' src='assets/chevronRight.svg' width={20} height={20} />
                     </div>
-                </div>
+                </div> */}
 
                 <div className={style.headerRight}>
-                    <UploadButton setShowUploadMusic={setShowUploadMusic} />
+                    {/* <UploadButton setShowUploadMusic={setShowUploadMusic} /> */}
 
                     <div className={style.profile}>
                         <div className={style.profileAvatarContainer}>
                             <img alt='' src='assets/avatar.jpg' className='rounded-full' />
                         </div>
-                        <p>MusiX ID</p>
+                        <p>5454c......54dSd</p>
                     </div>
                 </div>
             </div>
