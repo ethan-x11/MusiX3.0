@@ -6,7 +6,8 @@ import CreatePlaylist from "./createPlaylist";
 const Mainscreen = ({ initialSelectedIcon }) => {
   console.log(initialSelectedIcon);
   if (initialSelectedIcon === "home") return <Player />;
-  else if (initialSelectedIcon === "playlist") return <CreatePlaylist />;
+  else if (initialSelectedIcon === "explore") return <CreatePlaylist />;
+  else return <Player />;
 };
 
 export default Mainscreen;
