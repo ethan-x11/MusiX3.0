@@ -2,7 +2,7 @@ import NavLink from "./navLink";
 import Recents from "./recents";
 import { useContext } from "react";
 import { Context } from "../context/context";
-import UploadButton from './uploadButton'
+import UploadButton from "./uploadButton";
 import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
@@ -19,7 +19,7 @@ const Nav = () => {
   const wallet = useWallet();
   const { changeDisp } = useContext(Context);
   const options = "home;";
-  
+
   return (
     <div className={styles.nav}>
       <div className="mb-10 flex flex-col">
@@ -38,7 +38,8 @@ const Nav = () => {
             className={styles.link}
           />
         </button>
-        <button onClick={() => changeDisp("lib")}>
+        {/* <button onClick={() => changeDisp("lib")}> */}
+        <button>
           <NavLink
             icon="assets/playlist.svg"
             title="Your library"
@@ -64,13 +65,15 @@ const Nav = () => {
       </div>
       <div className={styles.profileWrapper}>
         <div className={styles.profile}>
-            <div className={styles.profileAvatarContainer}>
-                <img alt='' src='assets/avatar.jpg' className='rounded-full' />
-            </div>
-            <div>{wallet.publicKey.toString().slice(0,4,)}  ...  ${wallet.publicKey.toString().slice(-5)}</div>
+          <div className={styles.profileAvatarContainer}>
+            <img alt="" src="assets/avatar.jpg" className="rounded-full" />
+          </div>
+          <div>
+            {wallet.publicKey.toString().slice(0, 4)} ... $
+            {wallet.publicKey.toString().slice(-5)}
+          </div>
         </div>
       </div>
-
     </div>
   );
 };
