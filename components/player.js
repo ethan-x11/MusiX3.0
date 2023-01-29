@@ -9,7 +9,8 @@ import usemusix from '../hooks/usemusix'
 import Head from 'next/head'
 
 const style = {
-    wrapper: `flex-[2] h-screen min-h-screen p-6 no-scrollbar overflow-y-scroll select-none`,
+    wrapper: ` bg-[#15202b] flex-[2] h-screen min-h-screen p-6 no-scrollbar overflow-y-scroll select-none h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 border border-gray-100
+`,
     searchbox: `flex align-center justify-center w-full mb-6`,
     searchentry: `w-full bg-gray-200 rounded-lg p-2 text-black`,
     searchbutton: `bg-blue-500 text-white rounded-lg p-2 pl-4 ml-5`,

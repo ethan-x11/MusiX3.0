@@ -3,18 +3,23 @@ import Recents from "./recents";
 import { useContext } from "react";
 import { Context } from "../context/context";
 import UploadButton from './uploadButton'
+import { useWallet } from "@solana/wallet-adapter-react";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const styles = {
-  nav: `bg-black h-screen w-52 p-5 py-10 flex-[0.5] flex-col overflow-hidden`,
+  nav: `h-screen w-52 p-5 py-10 flex-[0.5] flex-col overflow-hidden`,
   link: `hover:text-[#fff]`,
   playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`,
   profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75 mb-2`,
   profileAvatarContainer: `w-7 h-7 rounded-full -ml-2 mr-3`,
+  profileWrapper: `h-80 flex flex-col justify-end`,
 };
 
 const Nav = () => {
+  const wallet = useWallet();
   const { changeDisp } = useContext(Context);
   const options = "home;";
+  
   return (
     <div className={styles.nav}>
       <div className="mb-10 flex flex-col">
@@ -57,12 +62,13 @@ const Nav = () => {
           <Recents />
         </div>
       </div>
-
-      <div className={styles.profile}>
-          <div className={styles.profileAvatarContainer}>
-              <img alt='' src='assets/avatar.jpg' className='rounded-full' />
-          </div>
-          <p>5454c......54dSd</p>
+      <div className={styles.profileWrapper}>
+        <div className={styles.profile}>
+            <div className={styles.profileAvatarContainer}>
+                <img alt='' src='assets/avatar.jpg' className='rounded-full' />
+            </div>
+            <div>{wallet.publicKey.toString().slice(0,4,)}  ...  ${wallet.publicKey.toString().slice(-5)}</div>
+        </div>
       </div>
 
     </div>

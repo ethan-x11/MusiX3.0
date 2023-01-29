@@ -8,7 +8,7 @@ import CreatePlaylist from "../components/createPlaylist";
 import { Context } from "../context/context";
 
 const style = {
-  wrapper: `flex justify-center max-h-screen select-none bg-[#15202b] text-white`,
+  wrapper: `flex justify-center max-h-screen select-none text-white`,
   // content: `max-w-[1400px] w-2/3 flex justify-between`,
   nav: `overflow-hidden`,
   main: `no-scrollbar overflow-y-scroll`,
