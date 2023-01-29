@@ -16,6 +16,7 @@ const style = {
 };
 
 const HomePage = () => {
+  const { disp } = useContext(Context);
   return (
     <div>
       <Head>
@@ -24,11 +25,11 @@ const HomePage = () => {
       </Head>
       <div className={style.wrapper}>
         <Nav className={style.nav} />
-        <Mainscreen className={style.main} initialSelectedIcon={"Home"} />
+        <Mainscreen className={style.main} initialSelectedIcon={disp} />
         <Activity className={style.act} />
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;
