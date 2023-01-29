@@ -56,6 +56,7 @@ const Player = () => {
     }
 
     return (
+        <>
         <div className={style.wrapper}>
             <Header setShowUploadMusic={setShowUploadMusic} />
 
@@ -75,6 +76,8 @@ const Player = () => {
         
             <Playlist songs={songs} searchId={searchTerm} />
 
+
+            </div>
             <PlayerControls songs={songs} />
             {showUploadMusic && (
                 <UploadModal
@@ -86,7 +89,7 @@ const Player = () => {
                 newMusic={newMusic}
                 />
             )}
-        </div>
+        </>
     )
 }
 

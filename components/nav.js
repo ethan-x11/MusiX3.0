@@ -7,7 +7,7 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const styles = {
-  nav: `h-screen w-52 p-5 py-10 flex-[0.5] flex-col overflow-hidden`,
+  nav: `h-screen w-52 p-5 py-10 flex-[0.75] flex-col overflow-hidden`,
   link: `hover:text-[#fff]`,
   playlistName: `text-[#b3b3b3] cursor-default text-sm hover:text-[#fff]`,
   profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75 mb-2`,
