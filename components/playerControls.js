@@ -10,6 +10,21 @@ import playRounded from "../assets/playRounded.svg"
 import pauseIcon from "../assets/pause.svg"
 import musicicon from "../assets/music.jpg"
 
+
+const styles = {
+  albumCoverContainer: `w-20 h-20 mr-3`,
+  coverPhoto: `object-cover`,
+  mainControl: `fixed bottom-0 left-0 p-5 py-3 pr-10 w-inherit bg-[#242424] z-40 flex items-center justify-between`,
+  // range: `appearance-none mx-3 hover:bg-[#000] h-1 hover:bg-[#22C55E] bg-[#fff] w-[500px]`,
+  // volumeRange: `mx-3 -hue-rotate-90 h-1`,
+  flexCenter: `flex items-center`,
+  controlIcon: `mr-5 cursor-pointer hover:opacity-100 opacity-50`,
+  playIcon: `mr-5 w-10 h-10 cursor-pointer hover:opacity-50`,
+  pauseIconStyle: `mt-3 w-10 h-10 cursor-pointer hover:opacity-50`,
+  controlIconsContainer: `flex items-center justify-center mb-2`,
+};
+
+
 const PlayerControls = ({songs}) => {
     const { currentSong, isPlaying, volume, onVolumeChange, timestamp, progress, playNext, playPrevious, isPaused, play, pause, onProgressChange } = useContext(Context)
 
@@ -78,16 +93,3 @@ const PlayerControls = ({songs}) => {
 }
 
 export default PlayerControls
-
-const styles = {
-    albumCoverContainer: `w-20 h-20 mr-3`,
-    coverPhoto: `object-cover`,
-    mainControl: `fixed bottom-0 left-0 p-5 py-3 pr-10 w-screen bg-[#242424] z-40 flex items-center justify-between`,
-    // range: `appearance-none mx-3 hover:bg-[#000] h-1 hover:bg-[#22C55E] bg-[#fff] w-[500px]`,
-    // volumeRange: `mx-3 -hue-rotate-90 h-1`,
-    flexCenter: `flex items-center`,
-    controlIcon: `mr-5 cursor-pointer hover:opacity-100 opacity-50`,
-    playIcon: `mr-5 w-10 h-10 cursor-pointer hover:opacity-50`,
-    pauseIconStyle: `mt-3 w-10 h-10 cursor-pointer hover:opacity-50`,
-    controlIconsContainer: `flex items-center justify-center mb-2`,
-}
