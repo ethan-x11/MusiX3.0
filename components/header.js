@@ -9,7 +9,7 @@ const style = {
     profile: `flex items-center bg-black rounded-full p-1 px-3 bg-opacity-50 cursor-pointer hover:bg-opacity-75 mb-2`,
     iconContainer: `ml-10`,
     title: `text-6xl font-extrabold`,
-    header: `sticky max-w-7xl m-auto p-3`,
+    header: `sticky max-w-7xl m-auto p-3 mb-4`,
     headerWrapper: `flex items-center justify-between`,
     playlistTextContent: `flex items-end mt-10`,
     profileAvatarContainer: `w-7 h-7 rounded-full -ml-2 mr-3`,
@@ -33,14 +33,14 @@ const Header = ({ setShowUploadMusic }) => {
                 </div> */}
 
                 <div className={style.headerRight}>
-                    {/* <UploadButton setShowUploadMusic={setShowUploadMusic} /> */}
+                    <UploadButton setShowUploadMusic={setShowUploadMusic} />
 
-                    <div className={style.profile}>
+                    {/* <div className={style.profile}>
                         <div className={style.profileAvatarContainer}>
                             <img alt='' src='assets/avatar.jpg' className='rounded-full' />
                         </div>
                         <p>5454c......54dSd</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

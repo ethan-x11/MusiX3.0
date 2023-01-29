@@ -23,6 +23,7 @@ const styles = {
     button: `bg-[#22C55E] m-3 text-white font-bold py-4 px-7 rounded-full hover:bg-blue-600 transition`,
     text: `text-4xl font-bold text-gray-700 mb-10 drop-shadow-2xl`,
     textr: `text-9xl font-brush text-red-600 mb-10 drop-shadow-2xl pb-60`,
+    demo: `bg-[#22C55E] m-3 text-white font-bold py-4 px-7 rounded-full hover:bg-blue-600 transition`,
     buttons: `flex items-center`,
 }
 
@@ -38,13 +39,17 @@ const Payments = () => {
     }, [wallet.connected, isPaid])
 
     const getAllWallets = async () => {
-        const payerList = await program.account.payerAccount.all()
-        setPayers(payerList)
-    
-        payerList.forEach(payer => {
-            if (payer.account.wallet.toBase58() == wallet.publicKey.toBase58())
-                setPaid(true)
-        })
+        try{
+            const payerList = await program.account.payerAccount.all()
+            setPayers(payerList)
+        
+            payerList.forEach(payer => {
+                if (payer.account.wallet.toBase58() == wallet.publicKey.toBase58())
+                    setPaid(true)
+            })
+        }catch(e){
+            alert("No Internet Connection")
+        }
     }
     
     const payClicked = async () => {

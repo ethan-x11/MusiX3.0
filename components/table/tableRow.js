@@ -21,7 +21,7 @@ const TableRow = ({ props }) => {
                 </th>
                 <th className={styles.th}>{'10,000'}</th>
                 {/* <th className={styles.th}>{props.plays}</th> */}
-                <th className={styles.th} style={{ itemAlign: "center" }}>{'2:43'}</th>
+                <th className={styles.th}>{'2:43'}</th>
                 {/*<th className={styles.th}>{props.songLength}</th> */}
             </tr>
         </tbody>
