@@ -8,7 +8,7 @@ const Mainscreen = ({ initialSelectedIcon }) => {
   console.log(initialSelectedIcon);
   if (initialSelectedIcon === "home") return <Player />;
   else if (initialSelectedIcon === "lib") return <CreatePlaylist />;
-  else return <CreatePlaylist />;
+  else return <Player />;
 };
 
 export default Mainscreen;
