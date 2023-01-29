@@ -33,6 +33,7 @@ const Payments = () => {
     const program = getProgramInstance(connection, wallet)
     const [payers, setPayers] = useState([])
     const [isPaid, setPaid] = useState(false)
+    const [isDemo, setDemo] = useState(false)
 
     useEffect(() => {
         if (wallet.connected) getAllWallets()
@@ -82,7 +83,8 @@ const Payments = () => {
     }
 
     if (isPaid) return <HomePage />
-    console.log(wallet.publicKey)
+    if (isDemo) return <HomePage />
+    // console.log(wallet.publicKey)
 
     return (
         <div className={styles.main} style={{backgroundImage: "url('https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?w=2000')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center"}}>
@@ -96,7 +98,7 @@ const Payments = () => {
                 >
                     Pay 0.1 Sol
                 </button>
-                <button className={styles.demo}>View Demo</button>
+                <button className={styles.demo} onClick={isDemo}>View Demo</button>
                 <button className={styles.button} onClick={getAllWallets}>
                     Verify Payment
                 </button>
