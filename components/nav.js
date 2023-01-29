@@ -1,5 +1,5 @@
 import NavLink from "./navLink";
-import Recents from "./recents";
+import Recents from "./Recents";
 import { useContext } from "react";
 import { Context } from "../context/context";
 import UploadButton from "./uploadButton";
