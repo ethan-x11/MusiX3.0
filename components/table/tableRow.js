@@ -2,7 +2,8 @@ import { useContext } from 'react'
 import { Context } from '../../context/context'
 
 const styles = {
-    th: `pb-5 hover:opacity-50 cursor-pointer`,
+    tr: `hover:text-yellow-400`,
+    th: `pb-5 cursor-pointer`,
     table: ``,
 }
 
@@ -11,7 +12,7 @@ const TableRow = ({ props }) => {
 
     return (
         <tbody>
-            <tr onClick={() => playOnSelect(props)}>
+            <tr className={styles.tr} onClick={() => playOnSelect(props)}>
                 <th className={styles.th}>
                     <div>
                         <p className="font-bold">{props.title}</p>

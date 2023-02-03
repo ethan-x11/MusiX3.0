@@ -6,6 +6,8 @@ export const SOLANA_HOST = "https://muddy-shy-dawn.solana-devnet.quiknode.pro/5b
 
 export const STABLE_POOL_PROGRAM_ID = new PublicKey(
     "AKXGSzURaj4NHr34kfYBYxdf7suCfLYrG6iquS7MBNo3"
+    // "okaqzuyJyPuy3SPZm6rsTwhHm2pwGifwkZBx17SGt1k"
 )
 
 export const STABLE_POOL_IDL = musix
+
