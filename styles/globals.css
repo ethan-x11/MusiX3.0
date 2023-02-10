@@ -48,6 +48,11 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wallet-adapter-modal-middle svg:hover{
+cursor: pointer;
 }
 
 input[type=range] {
