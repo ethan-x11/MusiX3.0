@@ -9,11 +9,12 @@ import usemusix from '../hooks/usemusix'
 import Head from 'next/head'
 
 const style = {
-    wrapper: ` bg-[#15202b] flex-[2] h-screen min-h-screen p-6 no-scrollbar overflow-y-scroll select-none h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 border border-gray-100
-`,
-    searchbox: `flex align-center justify-center w-full mb-6`,
+    wrapper: ` bg-[#15202b] flex-[2] h-screen min-h-screen p-6 no-scrollbar overflow-y-scroll select-none h-full w-full rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-90 border border-gray-100`,
+    header: `sticky top-0 flex justify-between items-center mb-6`,
+    searchbox: `sticky flex align-center justify-center w-full mb-6`,
     searchentry: `w-full bg-gray-200 rounded-lg p-2 text-black`,
     searchbutton: `bg-blue-500 text-white rounded-lg p-2 pl-4 ml-5`,
+    playlist: `no-scrollbar overflow-y-scroll`,
 };
 
 const Player = () => {
@@ -58,7 +59,7 @@ const Player = () => {
     return (
         <>
         <div className={style.wrapper}>
-            <Header setShowUploadMusic={setShowUploadMusic} />
+            <Header setShowUploadMusic={setShowUploadMusic} className={style.header}/>
 
             <form className={style.searchbox} onSubmit={handleSubmit}>
                 <input
@@ -74,7 +75,7 @@ const Player = () => {
                 </button>
             </form>
         
-            <Playlist songs={songs} searchId={searchTerm} />
+            <Playlist songs={songs} searchId={searchTerm} className={style.playlist}/>
 
 
             </div>

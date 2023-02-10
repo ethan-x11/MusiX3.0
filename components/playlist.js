@@ -6,7 +6,7 @@ const styles = {
   // tableWrapper: `max-w-7xl m-auto p-3 mt-5 mb-40`,
   tableWrapper: `max-w-7xl m-auto p-3 pb-0 flex-[2] border-r border-l border-[#38444d]`,
   tableHeader: `border-b border-gray-100/20 pb-5 opacity-50`,
-  end: `col-full text-center text-gray-100/50 text-sm mt-5 flex justify-center`,
+  end: `col-full text-center text-gray-100/50 text-sm mt-5 flex justify-center pb-24`,
 };
 
 const Playlist = ({ songs, searchId }) => {
