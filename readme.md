@@ -5,8 +5,6 @@
 
 **Live Demo**: <https://musix3.subhanjandutta.repl.co/>
 
-🎬**Demo Video**: <https://youtu.be/2y3_fHeS1AE>
-
 | Description |
 -----------
 With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favourite music and participate as a creator. 
