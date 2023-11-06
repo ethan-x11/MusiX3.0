@@ -9,7 +9,7 @@
 -----------
 With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favorite music and participate as a creator. 
 
-The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; Next.js and Tailwind CSS for Frontend; and for deployment, we have used Replit.
+The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; Next.js and Tailwind CSS for Frontend; and for deployment, we have used Vercel.
 
 🌟 Features -
 -----------
@@ -24,4 +24,4 @@ The Project is built using  Solana Smart Contracts and quicknode for the backend
 - [Solana](https://solana.com/)
 - [Solana PlayGround](https://beta.solpg.io/)
 - [Phantom Wallet](https://phantom.app/)
-- [Replit](https://replit.com/)
+- [Vercel](https://vercel.com/)
