@@ -7,14 +7,14 @@
 
 | Description |
 -----------
-With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favourite music and participate as a creator. 
+With all the features of a legitimate online music streaming platform, the "MusiX3.0" project is a prototype for a web-based music streaming platform where you can listen to your favorite music and participate as a creator. 
 
-The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; React.js and Tailwind CSS for Frontend; and for deployment we have used Replit.
+The Project is built using  Solana Smart Contracts and quicknode for the backend; Phantom Wallet for transactions; React.js and Tailwind CSS for Frontend; and for deployment, we have used Replit.
 
 🌟 Features -
 -----------
 
-- **Decentralized Music Streaming Platform** built as Blockchain Web3 dApp using Next.js, Solana, Phantom, QuickNode.
+- **Decentralized Music Streaming Platform** built as Blockchain Web3 dApp using Next.js, Solana, Phantom, and QuickNode.
 
 💻  Tech-Stacks Used -
 ---------------------
